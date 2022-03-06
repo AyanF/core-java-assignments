@@ -2,6 +2,534 @@
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
+	class Circle{
+	
+		
+		private double radiusCircle;
+		private double areaCircle;
+		private double circumferenceCircle;
+		
+		public double getRadiusCircle() {
+			return radiusCircle;
+		}
+		public void setRadiusCircle(double radiusCircle) {
+			this.radiusCircle = radiusCircle;
+		}
+		public double getAreaCircle() {
+			return areaCircle;
+		}
+		public void setAreaCircle(double areaCircle) {
+			this.areaCircle = areaCircle;
+		}
+		public double getCircumferenceCircle() {
+			return circumferenceCircle;
+		}
+		public void setCircumferenceCircle(double circumferenceCircle) {
+			this.circumferenceCircle = circumferenceCircle;
+		}
+		
+		
+		}
+	
+	class Square{
+	
+		private double sideSquare;
+		private double areaSquare;
+		private double perimeterSquare;
+		
+		
+		public double getSideSquare() {
+			return sideSquare;
+		}
+		public void setSideSquare(double sideSquare) {
+			this.sideSquare = sideSquare;
+		}
+		public double getAreaSquare() {
+			return areaSquare;
+		}
+		public void setAreaSquare(double areaSquare) {
+			this.areaSquare = areaSquare;
+		}
+		public double getPerimeterSquare() {
+			return perimeterSquare;
+		}
+		public void setPerimeterSquare(double perimeterSquare) {
+			this.perimeterSquare = perimeterSquare;
+		}
+
+	
+		
+		}
+
+	class Rectangle{
+	
+		private double lengthRectangle;
+		private double breadthRectangle;
+	
+		private double areaRectangle;
+		private double perimeterRectangle;
+		
+		
+		public double getLengthRectangle() {
+			return lengthRectangle;
+		}
+		public void setLengthRectangle(double lengthRectangle) {
+			this.lengthRectangle = lengthRectangle;
+		}
+		public double getBreadthRectangle() {
+			return breadthRectangle;
+		}
+		public void setBreadthRectangle(double breadthRectangle) {
+			this.breadthRectangle = breadthRectangle;
+		}
+		public double getAreaRectangle() {
+			return areaRectangle;
+		}
+		public void setAreaRectangle(double areaRectangle) {
+			this.areaRectangle = areaRectangle;
+		}
+		public double getPerimeterRectangle() {
+			return perimeterRectangle;
+		}
+		public void setPerimeterRectangle(double perimeterRectangle) {
+			this.perimeterRectangle = perimeterRectangle;
+		}
+		
+		
+	
+	}
+
+	class Triangle{
+	
+		private double baseTriangle;
+		private double heighTriangle;
+		private double sideOne;
+		private double sideTwo;
+		private double sideThree;
+	
+		private double areaTriangle;
+		private double permeterTriangle;
+		
+		
+		
+		public double getBaseTriangle() {
+			return baseTriangle;
+		}
+		public void setBaseTriangle(double baseTriangle) {
+			this.baseTriangle = baseTriangle;
+		}
+		public double getHeighTriangle() {
+			return heighTriangle;
+		}
+		public void setHeighTriangle(double heighTriangle) {
+			this.heighTriangle = heighTriangle;
+		}
+		public double getSideOne() {
+			return sideOne;
+		}
+		public void setSideOne(double sideOne) {
+			this.sideOne = sideOne;
+		}
+		public double getSideTwo() {
+			return sideTwo;
+		}
+		public void setSideTwo(double sideTwo) {
+			this.sideTwo = sideTwo;
+		}
+		public double getSideThree() {
+			return sideThree;
+		}
+		public void setSideThree(double sideThree) {
+			this.sideThree = sideThree;
+		}
+		public double getAreaTriangle() {
+			return areaTriangle;
+		}
+		public void setAreaTriangle(double areaTriangle) {
+			this.areaTriangle = areaTriangle;
+		}
+		public double getPermeterTriangle() {
+			return permeterTriangle;
+		}
+		public void setPermeterTriangle(double permeterTriangle) {
+			this.permeterTriangle = permeterTriangle;
+		}
+		
+		
+		
+	
+	}
+
+	class Parallelogram{
+	
+		private double baseParallelogram;
+		private double heightParallelogram;
+	
+		private double areaParallelogram;
+		private double perimeterParallelogram;
+		
+		
+		
+		public double getBaseParallelogram() {
+			return baseParallelogram;
+		}
+		public void setBaseParallelogram(double baseParallelogram) {
+			this.baseParallelogram = baseParallelogram;
+		}
+		public double getHeightParallelogram() {
+			return heightParallelogram;
+		}
+		public void setHeightParallelogram(double heightParallelogram) {
+			this.heightParallelogram = heightParallelogram;
+		}
+		public double getAreaParallelogram() {
+			return areaParallelogram;
+		}
+		public void setAreaParallelogram(double areaParallelogram) {
+			this.areaParallelogram = areaParallelogram;
+		}
+		public double getPerimeterParallelogram() {
+			return perimeterParallelogram;
+		}
+		public void setPerimeterParallelogram(double perimeterParallelogram) {
+			this.perimeterParallelogram = perimeterParallelogram;
+		}
+		
+		
+	
+	}
+
+	class SemiCircle {
+	
+		private double radiusSemiCircle;
+		private double areaSemiCircle;
+	
+		private double circumferenceSemiCircle;
+
+		public double getRadiusSemiCircle() {
+			return radiusSemiCircle;
+		}
+
+		public void setRadiusSemiCircle(double radiusSemiCircle) {
+			this.radiusSemiCircle = radiusSemiCircle;
+		}
+
+		public double getAreaSemiCircle() {
+			return areaSemiCircle;
+		}
+
+		public void setAreaSemiCircle(double areaSemiCircle) {
+			this.areaSemiCircle = areaSemiCircle;
+		}
+
+		public double getCircumferenceSemiCircle() {
+			return circumferenceSemiCircle;
+		}
+
+		public void setCircumferenceSemiCircle(double circumferenceSemiCircle) {
+			this.circumferenceSemiCircle = circumferenceSemiCircle;
+		}
+		
+		
+		
+	
+	}
+
+	class Rhombus{
+	
+		private double sideRhombus;
+		private double heightRhombus;
+	
+		private double areaRhombus;
+		private double perimeterRhombus;
+		
+		
+		
+		public double getSideRhombus() {
+			return sideRhombus;
+		}
+		public void setSideRhombus(double sideRhombus) {
+			this.sideRhombus = sideRhombus;
+		}
+		public double getHeightRhombus() {
+			return heightRhombus;
+		}
+		public void setHeightRhombus(double heightRhombus) {
+			this.heightRhombus = heightRhombus;
+		}
+		public double getAreaRhombus() {
+			return areaRhombus;
+		}
+		public void setAreaRhombus(double areaRhombus) {
+			this.areaRhombus = areaRhombus;
+		}
+		public double getPerimeterRhombus() {
+			return perimeterRhombus;
+		}
+		public void setPerimeterRhombus(double perimeterRhombus) {
+			this.perimeterRhombus = perimeterRhombus;
+		}
+		
+		
+		
+	
+	}
+
+	class Trapezium{
+	
+		private double sideOneTrapezium;
+		private double sideTwoTrapezium;
+		private double baseOneTrapezium;
+		private double baseTwoTrapezium;
+		private double heightTrapezium;
+	
+		private double areaTrapezium;
+		private double perimeterTrapezium;
+		
+		
+		
+		public double getSideOneTrapezium() {
+			return sideOneTrapezium;
+		}
+		public void setSideOneTrapezium(double sideOneTrapezium) {
+			this.sideOneTrapezium = sideOneTrapezium;
+		}
+		public double getSideTwoTrapezium() {
+			return sideTwoTrapezium;
+		}
+		public void setSideTwoTrapezium(double sideTwoTrapezium) {
+			this.sideTwoTrapezium = sideTwoTrapezium;
+		}
+		public double getBaseOneTrapezium() {
+			return baseOneTrapezium;
+		}
+		public void setBaseOneTrapezium(double baseOneTrapezium) {
+			this.baseOneTrapezium = baseOneTrapezium;
+		}
+		public double getBaseTwoTrapezium() {
+			return baseTwoTrapezium;
+		}
+		public void setBaseTwoTrapezium(double baseTwoTrapezium) {
+			this.baseTwoTrapezium = baseTwoTrapezium;
+		}
+		public double getHeightTrapezium() {
+			return heightTrapezium;
+		}
+		public void setHeightTrapezium(double heightTrapezium) {
+			this.heightTrapezium = heightTrapezium;
+		}
+		public double getAreaTrapezium() {
+			return areaTrapezium;
+		}
+		public void setAreaTrapezium(double areaTrapezium) {
+			this.areaTrapezium = areaTrapezium;
+		}
+		public double getPerimeterTrapezium() {
+			return perimeterTrapezium;
+		}
+		public void setPerimeterTrapezium(double perimeterTrapezium) {
+			this.perimeterTrapezium = perimeterTrapezium;
+		}
+		
+		
+		
+	
+	}
+
+	class Sphere{
+	
+		private double radiusSphere;
+		private double heightSphere;
+	
+		private double areaSphere;
+		private double volumeSphere;
+		
+		
+		
+		public double getRadiusSphere() {
+			return radiusSphere;
+		}
+		public void setRadiusSphere(double radiusSphere) {
+			this.radiusSphere = radiusSphere;
+		}
+		public double getHeightSphere() {
+			return heightSphere;
+		}
+		public void setHeightSphere(double heightSphere) {
+			this.heightSphere = heightSphere;
+		}
+		public double getAreaSphere() {
+			return areaSphere;
+		}
+		public void setAreaSphere(double areaSphere) {
+			this.areaSphere = areaSphere;
+		}
+		public double getVolumeSphere() {
+			return volumeSphere;
+		}
+		public void setVolumeSphere(double volumeSphere) {
+			this.volumeSphere = volumeSphere;
+		}
+		
+		
+		
+	
+	}
+	
+
+	class Cube{
+	
+		private double sideCude;
+	
+		private double surfaceAreaCube;
+		private double volumeCube;
+		
+		
+		public double getSideCude() {
+			return sideCude;
+		}
+		public void setSideCude(double sideCude) {
+			this.sideCude = sideCude;
+		}
+		public double getSurfaceAreaCube() {
+			return surfaceAreaCube;
+		}
+		public void setSurfaceAreaCube(double surfaceAreaCube) {
+			this.surfaceAreaCube = surfaceAreaCube;
+		}
+		public double getVolumeCube() {
+			return volumeCube;
+		}
+		public void setVolumeCube(double volumeCube) {
+			this.volumeCube = volumeCube;
+		}
+		
+		
+		
+	
+	}
+
+	class Cuboid{
+	
+		private double lengthCuboid;
+		private double breadthCuboid;
+	
+		private double volumeCuboid;
+		private double surfaceAreaCuboid;
+		
+		
+		
+		public double getLengthCuboid() {
+			return lengthCuboid;
+		}
+		public void setLengthCuboid(double lengthCuboid) {
+			this.lengthCuboid = lengthCuboid;
+		}
+		public double getBreadthCuboid() {
+			return breadthCuboid;
+		}
+		public void setBreadthCuboid(double breadthCuboid) {
+			this.breadthCuboid = breadthCuboid;
+		}
+		public double getVolumeCuboid() {
+			return volumeCuboid;
+		}
+		public void setVolumeCuboid(double volumeCuboid) {
+			this.volumeCuboid = volumeCuboid;
+		}
+		public double getSurfaceAreaCuboid() {
+			return surfaceAreaCuboid;
+		}
+		public void setSurfaceAreaCuboid(double surfaceAreaCuboid) {
+			this.surfaceAreaCuboid = surfaceAreaCuboid;
+		}
+		
+		
+		
+	
+	}
+
+	class Cone{
+	
+		private double radiusCone;
+		private double heightCone;
+	
+		private double surfaceAreaCone;
+		private double volumeCone;
+		
+		
+		
+		public double getRadiusCone() {
+			return radiusCone;
+		}
+		public void setRadiusCone(double radiusCone) {
+			this.radiusCone = radiusCone;
+		}
+		public double getHeightCone() {
+			return heightCone;
+		}
+		public void setHeightCone(double heightCone) {
+			this.heightCone = heightCone;
+		}
+		public double getSurfaceAreaCone() {
+			return surfaceAreaCone;
+		}
+		public void setSurfaceAreaCone(double surfaceAreaCone) {
+			this.surfaceAreaCone = surfaceAreaCone;
+		}
+		public double getVolumeCone() {
+			return volumeCone;
+		}
+		public void setVolumeCone(double volumeCone) {
+			this.volumeCone = volumeCone;
+		}
+		
+		
+		
+	
+	}
+
+	class Cylinder{
+	
+	
+		private double radiusCylinder;
+		private double heightCylinder;
+	
+		private double surfaceAreaCylinder;
+		private double volumeCylinder;
+		
+		
+		
+		public double getRadiusCylinder() {
+			return radiusCylinder;
+		}
+		public void setRadiusCylinder(double radiusCylinder) {
+			this.radiusCylinder = radiusCylinder;
+		}
+		public double getHeightCylinder() {
+			return heightCylinder;
+		}
+		public void setHeightCylinder(double heightCylinder) {
+			this.heightCylinder = heightCylinder;
+		}
+		public double getSurfaceAreaCylinder() {
+			return surfaceAreaCylinder;
+		}
+		public void setSurfaceAreaCylinder(double surfaceAreaCylinder) {
+			this.surfaceAreaCylinder = surfaceAreaCylinder;
+		}
+		public double getVolumeCylinder() {
+			return volumeCylinder;
+		}
+		public void setVolumeCylinder(double volumeCylinder) {
+			this.volumeCylinder = volumeCylinder;
+		}
+		
+		
+		
+	
+	}
+
 public class Mensuration {
 	
 	Scanner sc = new Scanner(System.in);
@@ -23,150 +551,7 @@ public class Mensuration {
 		
 	}
 	
-	
-	class Circle{
-		
-		private double radiusCircle;
-		
-		private double areaCircle;
-		private double circumferenceCircle;
-		
-		}
-	
-	class Square{
-		
-		private double sideSquare;
-		
-		private double areaSquare;
-		private double perimeterSquare;
-		
-		}
-
-	class Rectangle{
-	
-		private double lengthRectangle;
-		private double breadthRectangle;
-	
-		private double areaRectangle;'
-		private double perimeterRectangle;
-	
-	}
-
-	class Triangle{
-	
-		private double baseTriangle;
-		private double heighTriangle;
-		private double sideOne;
-		private double sideTwo;
-		private double sideThree;
-	
-		private double areaTriangle;
-		private double permeterTriangle;
-	
-	}
-
-	class Parallelogram{
-	
-		private double baseParallelogram;
-		private double heightParallelogram;
-	
-		private double areaParallelogram;
-		private double perimeterParallelogram;
-	
-	}
-
-	class Semi-Circle {
-	
-		private double radiusSemiCircle;
-		private double areaSemiCircle;
-	
-		private double circumferenceSemiCircle;
-	
-	}
-
-	class Rhombus{
-	
-		private double sideRhombus;
-		private double heightRhombus;
-	
-		private double areaRhombus;
-		private double perimeterRhombus;
-	
-	}
-
-	class Trapezium{
-	
-		private double sideOneTrapezium;
-		private double sideTwoTrapezium;
-		private double baseOneTrapezium;
-		private double baseTwoTrapezium;
-		private double heightTrapezium;
-	
-		private double areaTrapezium;
-		private double perimeterTrapezium;
-	
-	}
-
-	class Sphere{
-	
-		private double radiusSphere;
-		private double heightSphere;
-	
-		private double areaSphere;
-		private double volumeSphere;
-	
-	}
-	
-
-	class Cube{
-	
-		private double sideCude;
-	
-		private double surfaceAreaCube;
-		private double volumeCube;
-	
-	}
-
-	class Cuboid{
-	
-		private double lengthCuboid;
-		private double breadthCuboid;
-	
-		private double volumeCuboid;
-		private double surfaceAreaCuboid;
-	
-	}
-
-	class Cone{
-	
-		private double radiusCone;
-		private double heightCone;
-	
-		private double surfaceAreaCone;
-		private double volumeCone;
-	
-	}
-
-	class Cylinder{
-	
-	
-		private double radiusCylinder;
-		private double heightCylinder;
-	
-		private double surfaceAreaCylinder;
-		private double volumeCylinder;
-	
-	}
-	
-	
-	
-	
-	
-	
-	
-
-
-	public static void main(String[] args) {
+	 public static void main(String[] args) {
 		
 		
 		int choice = displayMenu();
