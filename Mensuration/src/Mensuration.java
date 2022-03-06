@@ -24,6 +24,144 @@ public class Mensuration {
 	}
 	
 	
+	class Circle{
+		
+		private double radiusCircle;
+		
+		private double areaCircle;
+		private double circumferenceCircle;
+		
+		}
+	
+	class Square{
+		
+		private double sideSquare;
+		
+		private double areaSquare;
+		private double perimeterSquare;
+		
+		}
+
+	class Rectangle{
+	
+		private double lengthRectangle;
+		private double breadthRectangle;
+	
+		private double areaRectangle;'
+		private double perimeterRectangle;
+	
+	}
+
+	class Triangle{
+	
+		private double baseTriangle;
+		private double heighTriangle;
+		private double sideOne;
+		private double sideTwo;
+		private double sideThree;
+	
+		private double areaTriangle;
+		private double permeterTriangle;
+	
+	}
+
+	class Parallelogram{
+	
+		private double baseParallelogram;
+		private double heightParallelogram;
+	
+		private double areaParallelogram;
+		private double perimeterParallelogram;
+	
+	}
+
+	class Semi-Circle {
+	
+		private double radiusSemiCircle;
+		private double areaSemiCircle;
+	
+		private double circumferenceSemiCircle;
+	
+	}
+
+	class Rhombus{
+	
+		private double sideRhombus;
+		private double heightRhombus;
+	
+		private double areaRhombus;
+		private double perimeterRhombus;
+	
+	}
+
+	class Trapezium{
+	
+		private double sideOneTrapezium;
+		private double sideTwoTrapezium;
+		private double baseOneTrapezium;
+		private double baseTwoTrapezium;
+		private double heightTrapezium;
+	
+		private double areaTrapezium;
+		private double perimeterTrapezium;
+	
+	}
+
+	class Sphere{
+	
+		private double radiusSphere;
+		private double heightSphere;
+	
+		private double areaSphere;
+		private double volumeSphere;
+	
+	}
+	
+
+	class Cube{
+	
+		private double sideCude;
+	
+		private double surfaceAreaCube;
+		private double volumeCube;
+	
+	}
+
+	class Cuboid{
+	
+		private double lengthCuboid;
+		private double breadthCuboid;
+	
+		private double volumeCuboid;
+		private double surfaceAreaCuboid;
+	
+	}
+
+	class Cone{
+	
+		private double radiusCone;
+		private double heightCone;
+	
+		private double surfaceAreaCone;
+		private double volumeCone;
+	
+	}
+
+	class Cylinder{
+	
+	
+		private double radiusCylinder;
+		private double heightCylinder;
+	
+		private double surfaceAreaCylinder;
+		private double volumeCylinder;
+	
+	}
+	
+	
+	
+	
+	
 	
 	
 
@@ -70,8 +208,16 @@ public class Mensuration {
 			String baseTriangleStr = JOptionPane.showInputDialog(null,"Enter base of Triangle");
 			String heightTriangleStr = JOptionPane.showInputDialog(null,"Enter heigh of Trianglet");
 			
+			String sideOneTriangleStr = JOptionPane.showInputDialog(null,"Enter side one  of Trianglet");
+			String sideTwoTriangleStr = JOptionPane.showInputDialog(null,"Enter side two of Trianglet");
+			String sideThreeTriangleStr = JOptionPane.showInputDialog(null,"Enter side three of Trianglet");
+			
 			double baseTriangle =  Double.parseDouble(baseTriangleStr);
 			double heightTriangle =  Double.parseDouble(heightTriangleStr);
+			
+			double sideOneTriangle =  Double.parseDouble(sideOneTriangleStr);
+			double sideTwoTriangle =  Double.parseDouble(sideTwoTriangleStr);
+			double sideThreeTriangle =  Double.parseDouble(sideThreeTriangleStr);
 			
 			break;
 			
