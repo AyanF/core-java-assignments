@@ -40,7 +40,7 @@ public class Mensuration {
 			
 			String radiusCircleStr = JOptionPane.showInputDialog(null,"Enter radius");
 			
-			double radiusCircle =  Double.parseDouble(radiusStr);
+			double radiusCircle =  Double.parseDouble(radiusCircleStr);
 			
 			break;
 
