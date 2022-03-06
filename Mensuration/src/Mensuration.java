@@ -550,6 +550,24 @@ public class Mensuration {
 		return choice;
 		
 	}
+
+	static double findArea(Circle circle) {
+		
+		double radius = circle.getRadiusCircle();
+				
+		double area = PI*radius*radius ;
+		
+		return area;
+	}
+	
+static double findCircumference(Circle circle) {
+	
+		double radius = circle.getRadiusCircle();
+	
+		double circumference = 2*PI*radius;
+		
+		return circumference;
+	}
 	
 	 public static void main(String[] args) {
 		
@@ -561,9 +579,18 @@ public class Mensuration {
 //Circle
 		case 1:
 			
-			String radiusCircleStr = JOptionPane.showInputDialog(null,"Enter radius");
+			String radiusCircleStr = JOptionPane.showInputDialog(null,"Enter radius in cm");
 			
 			double radiusCircle =  Double.parseDouble(radiusCircleStr);
+			
+			Circle circle = new Circle();
+			circle.setRadiusCircle(radiusCircle); 
+			
+			double area = findArea(circle);
+			double circumference = findCircumference(circle);
+			
+			JOptionPane.showMessageDialog(null,"Area is "+ area+"cm2\nCircumference is "+circumference+"cm");
+			
 			
 			break;
 
