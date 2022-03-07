@@ -1,6 +1,6 @@
 package Mensuration;
 
-class Parallelogram{
+class Parallelogram {
 	
 	private double baseParallelogram;
 	private double heightParallelogram;
@@ -35,4 +35,13 @@ class Parallelogram{
 		this.perimeterParallelogram = perimeterParallelogram;
 	}
 	
+	public void properties(Parallelogram parallelogram) {
+		
+		double area = baseParallelogram*heightParallelogram;
+		double perimeter = 2*(baseParallelogram+heightParallelogram);
+		
+		parallelogram.setAreaParallelogram(area);
+		parallelogram.setPerimeterParallelogram(perimeter);
+		
+	}
 }

@@ -30,5 +30,16 @@ class SemiCircle {
 	public void setCircumferenceSemiCircle(double circumferenceSemiCircle) {
 		this.circumferenceSemiCircle = circumferenceSemiCircle;
 	}
+
+	public void properties(SemiCircle semiCircle) {
+		
+		
+		double area = 1/2*Mensuration.PI*(radiusSemiCircle*radiusSemiCircle);
+		
+		double perimeter = (Mensuration.PI*radiusSemiCircle) + (2*radiusSemiCircle) ;
+		
+		semiCircle.setAreaSemiCircle(area);
+		semiCircle.setCircumferenceSemiCircle(perimeter);
+	}
 	
 }

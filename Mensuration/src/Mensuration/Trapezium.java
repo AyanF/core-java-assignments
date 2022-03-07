@@ -1,6 +1,6 @@
 package Mensuration;
 
-class Trapezium{
+class Trapezium {
 	
 	private double sideOneTrapezium;
 	private double sideTwoTrapezium;
@@ -54,6 +54,17 @@ class Trapezium{
 	}
 	public void setPerimeterTrapezium(double perimeterTrapezium) {
 		this.perimeterTrapezium = perimeterTrapezium;
+	}
+	
+	public void properties( ) {
+		 
+		double area = ;
+		
+		double perimeter = ;
+				
+		
+		
+		
 	}
 	
 }

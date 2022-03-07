@@ -1,5 +1,5 @@
 package Mensuration;
-
+ 
 class Rectangle{
 
 	private double lengthRectangle;
@@ -35,5 +35,15 @@ class Rectangle{
 	}
 	
 	
-
+		public void properties(Rectangle rectangle) {
+			
+			
+			double area = lengthRectangle*breadthRectangle ;
+			
+			double perimeter = 2*(lengthRectangle+breadthRectangle);
+			
+			rectangle.setAreaRectangle(area);
+			rectangle.setPerimeterRectangle(perimeter);
+		}
+	
 }

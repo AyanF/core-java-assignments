@@ -16,12 +16,7 @@ class Sphere{
 	public void setRadiusSphere(double radiusSphere) {
 		this.radiusSphere = radiusSphere;
 	}
-	public double getHeightSphere() {
-		return heightSphere;
-	}
-	public void setHeightSphere(double heightSphere) {
-		this.heightSphere = heightSphere;
-	}
+	
 	public double getAreaSphere() {
 		return areaSphere;
 	}
@@ -33,6 +28,19 @@ class Sphere{
 	}
 	public void setVolumeSphere(double volumeSphere) {
 		this.volumeSphere = volumeSphere;
+	}
+	
+	public void properties(Sphere sphere) {
+		
+	 double radius	= sphere.getRadiusSphere();
+	 
+	 double volume = 4/3*(Mensuration.PI) *(radius*radius*radius);
+	 
+	 double surfaceArea = 4*Mensuration.PI * (radius*radius);
+	 
+	 sphere.setAreaSphere(surfaceArea);
+	 sphere.setVolumeSphere(volume);
+		
 	}
 	
 }

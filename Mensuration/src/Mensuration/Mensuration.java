@@ -9,7 +9,7 @@ public class Mensuration {
 
 	
 	//Declaring final variable pi
-	static final double PI = 3.1415926536;
+	public static final double PI = 3.1415926536;
 	
 	//Method to display shape menu
 	static int displayMenu(){
@@ -25,14 +25,7 @@ public class Mensuration {
 		
 	}
 
-	static double findArea(Circle circle) {
-		
-		double radius = circle.getRadiusCircle();
-				
-		double area = PI*radius*radius ;
-		
-		return area;
-	}
+	
 	
 
 	
@@ -62,10 +55,12 @@ public class Mensuration {
 			Circle circle = new Circle();
 			circle.setRadiusCircle(radiusCircle); 
 			
-			double area = findArea(circle);
-			double circumference = findCircumference(circle);
+			circle.properties(circle);
 			
-			JOptionPane.showMessageDialog(null,"Area is "+ area+"cm2\nCircumference is "+circumference+"cm");
+			double areaCircle = circle.getAreaCircle();
+			double circumferenceCircle = circle.getCircumferenceCircle();
+			
+			JOptionPane.showMessageDialog(null,"Area is "+ areaCircle+"cm2\nCircumference is "+circumferenceCircle+"cm");
 			displayMenu();
 			
 			break;
@@ -76,6 +71,17 @@ public class Mensuration {
 			String sideSquareStr = JOptionPane.showInputDialog(null,"Enter side");
 			
 			double sideSquare =  Double.parseDouble(sideSquareStr);
+			
+			Square square = new Square();
+			
+			square.setSideSquare(sideSquare);
+			square.properties(square);
+			
+			double squareArea = square.getAreaSquare();
+			double squarePerimeter = square.getPerimeterSquare();
+			
+			JOptionPane.showMessageDialog(null,"Area is "+ squareArea+"cm2\nPerimeteris "+squarePerimeter+"cm");
+			displayMenu();
 			
 			break;
 			
@@ -88,6 +94,19 @@ public class Mensuration {
 			double lengthRectangle =  Double.parseDouble(lengthRectangleStr);
 			double breadthRectangle =  Double.parseDouble(breadthRectangleStr);
 			
+			Rectangle rectangle = new Rectangle();
+			
+			rectangle.setLengthRectangle(lengthRectangle);
+			rectangle.setBreadthRectangle(breadthRectangle);
+			
+			rectangle.properties(rectangle);
+			
+			double rectangleArea = rectangle.getAreaRectangle();
+			double rectanglePerimeter = rectangle.getPerimeterRectangle();
+			
+			JOptionPane.showMessageDialog(null,"Area is "+ rectangleArea+"cm2\nPerimeteris "+rectanglePerimeter+"cm");
+			displayMenu();
+			
 			break;
 			
 //Triangle
@@ -95,17 +114,32 @@ public class Mensuration {
 			
 			String baseTriangleStr = JOptionPane.showInputDialog(null,"Enter base of Triangle");
 			String heightTriangleStr = JOptionPane.showInputDialog(null,"Enter heigh of Trianglet");
-			
 			String sideOneTriangleStr = JOptionPane.showInputDialog(null,"Enter side one  of Trianglet");
 			String sideTwoTriangleStr = JOptionPane.showInputDialog(null,"Enter side two of Trianglet");
 			String sideThreeTriangleStr = JOptionPane.showInputDialog(null,"Enter side three of Trianglet");
 			
 			double baseTriangle =  Double.parseDouble(baseTriangleStr);
 			double heightTriangle =  Double.parseDouble(heightTriangleStr);
-			
 			double sideOneTriangle =  Double.parseDouble(sideOneTriangleStr);
 			double sideTwoTriangle =  Double.parseDouble(sideTwoTriangleStr);
 			double sideThreeTriangle =  Double.parseDouble(sideThreeTriangleStr);
+			
+			Triangle triangle = new Triangle();
+			
+			triangle.setBaseTriangle(baseTriangle);
+			triangle.setHeighTriangle(heightTriangle);
+			triangle.setSideOne(sideOneTriangle);
+			triangle.setSideTwo(sideTwoTriangle);
+			triangle.setSideThree(sideThreeTriangle);
+			
+			triangle.properties(triangle);
+			
+			double triangleArea = triangle.getAreaTriangle();
+			double trianglePerimeter = triangle.getPermeterTriangle();
+			
+			JOptionPane.showMessageDialog(null,"Area is "+ triangleArea+"cm2\nPerimeteris "+trianglePerimeter+"cm");
+			displayMenu();
+			
 			
 			break;
 			
@@ -117,13 +151,40 @@ public class Mensuration {
 			
 			double baseParallelogram =  Double.parseDouble(baseParallelogramStr);
 			double heightParallelogram =  Double.parseDouble(heightParallelogramStr);
+			
+			Parallelogram parallelogram = new Parallelogram();
+			
+			parallelogram.setHeightParallelogram(heightParallelogram);
+			parallelogram.setBaseParallelogram(baseParallelogram);
+			
+			
+			parallelogram.properties(parallelogram);
+			
+			double parallelogramArea = parallelogram.getAreaParallelogram();
+			double parallelogramPerimeter = parallelogram.getPerimeterParallelogram();
+			
+			JOptionPane.showMessageDialog(null,"Area is "+ parallelogramArea+"cm2\nPerimeteris "+parallelogramPerimeter+"cm");
+			displayMenu();
 			break;
 			
-//Semi Circle
+//Semi-Circle
 		case 6:
 			
 			String radiusSemiStr = JOptionPane.showInputDialog(null,"Enter radius of semi-circle");
 			double radiusSemi =  Double.parseDouble(radiusSemiStr);
+			
+			SemiCircle semiCircle = new SemiCircle();
+			
+			semiCircle.setRadiusSemiCircle(radiusSemi);
+			
+			semiCircle.properties(semiCircle);
+			
+			double semiCircleArea = semiCircle.getAreaSemiCircle();
+			double semiCirclePerimeter = semiCircle.getCircumferenceSemiCircle();
+			
+			JOptionPane.showMessageDialog(null,"Area is "+ semiCircleArea+"cm2\nCircumference is "+semiCirclePerimeter+"cm");
+			displayMenu();
+			
 			
 			break;
 			
@@ -218,8 +279,8 @@ public class Mensuration {
 		
 		
 	}
-		
-		 
-	}
+
+
+}
 
 
