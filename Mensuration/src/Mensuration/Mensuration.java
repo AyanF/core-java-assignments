@@ -61,6 +61,7 @@ public class Mensuration {
 			double circumferenceCircle = circle.getCircumferenceCircle();
 			
 			JOptionPane.showMessageDialog(null,"Area is "+ areaCircle+"cm2\nCircumference is "+circumferenceCircle+"cm");
+			
 			displayMenu();
 			
 			break;
@@ -81,6 +82,7 @@ public class Mensuration {
 			double squarePerimeter = square.getPerimeterSquare();
 			
 			JOptionPane.showMessageDialog(null,"Area is "+ squareArea+"cm2\nPerimeteris "+squarePerimeter+"cm");
+			
 			displayMenu();
 			
 			break;
@@ -105,6 +107,7 @@ public class Mensuration {
 			double rectanglePerimeter = rectangle.getPerimeterRectangle();
 			
 			JOptionPane.showMessageDialog(null,"Area is "+ rectangleArea+"cm2\nPerimeteris "+rectanglePerimeter+"cm");
+			
 			displayMenu();
 			
 			break;
@@ -138,6 +141,7 @@ public class Mensuration {
 			double trianglePerimeter = triangle.getPermeterTriangle();
 			
 			JOptionPane.showMessageDialog(null,"Area is "+ triangleArea+"cm2\nPerimeteris "+trianglePerimeter+"cm");
+			
 			displayMenu();
 			
 			
@@ -163,8 +167,10 @@ public class Mensuration {
 			double parallelogramArea = parallelogram.getAreaParallelogram();
 			double parallelogramPerimeter = parallelogram.getPerimeterParallelogram();
 			
-			JOptionPane.showMessageDialog(null,"Area is "+ parallelogramArea+"cm2\nPerimeteris "+parallelogramPerimeter+"cm");
+			JOptionPane.showMessageDialog(null,"Area is "+ parallelogramArea+"cm2\nPerimeter is "+parallelogramPerimeter+"cm");
+			
 			displayMenu();
+			
 			break;
 			
 //Semi-Circle
@@ -183,8 +189,8 @@ public class Mensuration {
 			double semiCirclePerimeter = semiCircle.getCircumferenceSemiCircle();
 			
 			JOptionPane.showMessageDialog(null,"Area is "+ semiCircleArea+"cm2\nCircumference is "+semiCirclePerimeter+"cm");
-			displayMenu();
 			
+			displayMenu();
 			
 			break;
 			
@@ -196,6 +202,20 @@ public class Mensuration {
 			
 			double sideRhombus =  Double.parseDouble(sideRhombusStr);
 			double heightRhombus =  Double.parseDouble(heightRhombusStr);
+			
+			Rhombus rhombus = new Rhombus();
+			
+			rhombus.setHeightRhombus(heightRhombus);
+			rhombus.setSideRhombus(sideRhombus);
+			
+			rhombus.properties(rhombus);
+			
+			double rhombusArea = rhombus.getAreaRhombus()
+			double rhombusPerimeter = rhombus.getPerimeterRhombus();
+			
+			JOptionPane.showMessageDialog(null,"Area is "+ rhombusArea+"cm2\nPerimeter is "+rhombusPerimeter+"cm");
+			
+			displayMenu();
 			
 			break;
 			
@@ -211,12 +231,30 @@ public class Mensuration {
 			String sideOneTrapStr = JOptionPane.showInputDialog(null,"Enter side one  of Trapezium");
 			String sideTwoTrapStr = JOptionPane.showInputDialog(null,"Enter side two of Trapezium");
 			
-			double baseOneTrap =  Double.parseDouble(baseOneTrapStr);
-			double baseTwoTrap =  Double.parseDouble(baseTwoTrapStr);
-			double heightTrap =  Double.parseDouble(heightTrapStr);
+			double baseOneTrapezium =  Double.parseDouble(baseOneTrapStr);
+			double baseTwoTrapezium =  Double.parseDouble(baseTwoTrapStr);
+			double heightTrapezium =  Double.parseDouble(heightTrapStr);
 			
-			double sideOneTrap =  Double.parseDouble(sideOneTrapStr);
-			double sodeTwoTrap =  Double.parseDouble(sideTwoTrapStr);
+			double sideOneTrapezium =  Double.parseDouble(sideOneTrapStr);
+			double sideTwoTrapezium =  Double.parseDouble(sideTwoTrapStr);
+			
+			Trapezium trapezium = new Trapezium();
+			
+			trapezium.setBaseOneTrapezium(baseOneTrapezium);
+			trapezium.setBaseTwoTrapezium(baseTwoTrapezium);
+			trapezium.setHeightTrapezium(heightTrapezium);
+			trapezium.setSideOneTrapezium(sideOneTrapezium);
+			trapezium.setSideTwoTrapezium(sideTwoTrapezium);
+			
+			trapezium.properties(trapezium);
+			
+			double trapeziumArea = trapezium.getAreaTrapezium();
+			double trapeziumPerimeter = trapezium.getPerimeterTrapezium();
+			
+			JOptionPane.showMessageDialog(null,"Area is "+ trapeziumArea+"cm2\nPerimeter is "
+										  +trapeziumPerimeter+"cm");
+			
+			displayMenu();
 			
 			break;
 			
@@ -226,7 +264,20 @@ public class Mensuration {
 			String radiusSphereStr = JOptionPane.showInputDialog(null,"Enter radius of sphere");
 			String heightSphereStr = JOptionPane.showInputDialog(null,"Enter height of sphere");
 			
-			double radius =  Double.parseDouble(radiusSphereStr);
+			double radiusSphere  =  Double.parseDouble(radiusSphereStr);
+			
+			Sphere sphere = new Sphere();
+			
+			sphere.setRadiusSphere(radiusSphere);
+			
+			sphere.properties(sphere);
+			
+			double sphereArea = sphere.getAreaSphere();
+			double sphereVolume= sphere.getVolumeSphere();
+			
+			JOptionPane.showMessageDialog(null,"Surface rea is "+ sphereArea+"cm2\n Volume is "+sphereVolume+"cm3");
+			
+			displayMenu();
 			
 			break;
 			
@@ -235,6 +286,19 @@ public class Mensuration {
 			
 			String sideCubeStr = JOptionPane.showInputDialog(null,"Enter side of cube");
 			double sideCube=  Double.parseDouble(sideCubeStr);
+			
+			Cube cube = new Cube();
+			
+			cube.setSideCude(sideCube);
+			
+			cube.properties(cube);
+			
+			double cubeArea = cube.getSurfaceAreaCube();
+			double cubeVolume = cube.getVolumeCube();
+			
+			JOptionPane.showMessageDialog(null,"Area is "+ cubeArea+"cm2\nVo lumeis "+cubeVolume+"cm");3
+			
+			displayMenu();
 			
 			break;
 			
@@ -247,6 +311,20 @@ public class Mensuration {
 			double lengthCuboid =  Double.parseDouble(lengthCuboidStr);
 			double breadthCuboid =  Double.parseDouble(breadthCuboidStr);
 			
+			Cuboid cuboid = new Cuboid();
+			
+			cuboid.setLengthCuboid(lengthCuboid);
+			cuboid.setBreadthCuboid(breadthCuboid);
+			
+			cuboid.properties(cuboid);
+			
+			double cuboidArea = cuboid.getSurfaceAreaCuboid();
+			double cuboidVolume = cuboid.getVolumeCuboid();
+			
+			JOptionPane.showMessageDialog(null,"Area is "+ cuboidArea+"cm2\nVo lumeis "+cuboidVolume+"cm3");
+			
+			displayMenu();
+			
 			break;
 			
 //Cone
@@ -258,6 +336,20 @@ public class Mensuration {
 			double radiusCone =  Double.parseDouble(radiusConeStr);
 			double heightCone =  Double.parseDouble(heightConeStr);
 			
+			Cone cone = new Cone();
+			
+			cone.setRadiusCone(radiusCone);
+			cone.setHeightCone(heightCone);
+			
+			cone.properties(cone);
+			
+			double coneArea = cone.getSurfaceAreaCone();
+			double coneVolume = cone.getVolumeCone(); 
+			
+			JOptionPane.showMessageDialog(null,"Area is "+ coneArea+"cm2\nVo lumeis "+coneVolume+"cm");
+			
+			displayMenu();
+			
 			break;
 			
 //Cylinder
@@ -268,6 +360,20 @@ public class Mensuration {
 			
 			double radiusCylinder =  Double.parseDouble(radiusCylinderStr);
 			double heightCylinder =  Double.parseDouble(heightCylinderStr);
+			
+			Cylinder cylinder = new Cylinder();
+			
+			cylinder.setHeightCylinder(heightCylinder);
+			cylinder.setRadiusCylinder(radiusCylinder);
+			
+			cylinder.properties(cylinder);
+			
+			double cylinderArea = cylinder.getSurfaceAreaCylinder();
+			double cylinderVolume = cylinder.getVolumeCylinder();
+			
+			JOptionPane.showMessageDialog(null,"Area is "+ cylinderArea+"cm2\nVo lumeis "+cylinderVolume+"cm3");
+			
+			displayMenu();
 			
 			break;
 			
