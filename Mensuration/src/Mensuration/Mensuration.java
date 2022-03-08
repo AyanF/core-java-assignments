@@ -60,7 +60,8 @@ public class Mensuration {
 			double areaCircle = circle.getAreaCircle();
 			double circumferenceCircle = circle.getCircumferenceCircle();
 			
-			JOptionPane.showMessageDialog(null,"Area is "+ areaCircle+"cm2\nCircumference is "+circumferenceCircle+"cm");
+			JOptionPane.showMessageDialog(null,"Area is "+ areaCircle+"cm2\nCircumference is "
+										  +circumferenceCircle+"cm");
 			
 			displayMenu();
 			
@@ -106,7 +107,8 @@ public class Mensuration {
 			double rectangleArea = rectangle.getAreaRectangle();
 			double rectanglePerimeter = rectangle.getPerimeterRectangle();
 			
-			JOptionPane.showMessageDialog(null,"Area is "+ rectangleArea+"cm2\nPerimeteris "+rectanglePerimeter+"cm");
+			JOptionPane.showMessageDialog(null,"Area is "+ rectangleArea+"cm2\nPerimeteris "
+										  +rectanglePerimeter+"cm");
 			
 			displayMenu();
 			
@@ -140,7 +142,8 @@ public class Mensuration {
 			double triangleArea = triangle.getAreaTriangle();
 			double trianglePerimeter = triangle.getPermeterTriangle();
 			
-			JOptionPane.showMessageDialog(null,"Area is "+ triangleArea+"cm2\nPerimeteris "+trianglePerimeter+"cm");
+			JOptionPane.showMessageDialog(null,"Area is "+ triangleArea+"cm2\nPerimeteris "
+										  +trianglePerimeter+"cm");
 			
 			displayMenu();
 			
@@ -167,7 +170,8 @@ public class Mensuration {
 			double parallelogramArea = parallelogram.getAreaParallelogram();
 			double parallelogramPerimeter = parallelogram.getPerimeterParallelogram();
 			
-			JOptionPane.showMessageDialog(null,"Area is "+ parallelogramArea+"cm2\nPerimeter is "+parallelogramPerimeter+"cm");
+			JOptionPane.showMessageDialog(null,"Area is "+ parallelogramArea+"cm2\nPerimeter is "
+										  +parallelogramPerimeter+"cm");
 			
 			displayMenu();
 			
@@ -188,7 +192,8 @@ public class Mensuration {
 			double semiCircleArea = semiCircle.getAreaSemiCircle();
 			double semiCirclePerimeter = semiCircle.getCircumferenceSemiCircle();
 			
-			JOptionPane.showMessageDialog(null,"Area is "+ semiCircleArea+"cm2\nCircumference is "+semiCirclePerimeter+"cm");
+			JOptionPane.showMessageDialog(null,"Area is "+ semiCircleArea+"cm2\nCircumference is "
+										  +semiCirclePerimeter+"cm");
 			
 			displayMenu();
 			
@@ -210,7 +215,7 @@ public class Mensuration {
 			
 			rhombus.properties(rhombus);
 			
-			double rhombusArea = rhombus.getAreaRhombus()
+			double rhombusArea = rhombus.getAreaRhombus();
 			double rhombusPerimeter = rhombus.getPerimeterRhombus();
 			
 			JOptionPane.showMessageDialog(null,"Area is "+ rhombusArea+"cm2\nPerimeter is "+rhombusPerimeter+"cm");
@@ -275,7 +280,8 @@ public class Mensuration {
 			double sphereArea = sphere.getAreaSphere();
 			double sphereVolume= sphere.getVolumeSphere();
 			
-			JOptionPane.showMessageDialog(null,"Surface rea is "+ sphereArea+"cm2\n Volume is "+sphereVolume+"cm3");
+			JOptionPane.showMessageDialog(null,"Surface rea is "+ sphereArea+"cm2\n Volume is "
+										  +sphereVolume+"cm3");
 			
 			displayMenu();
 			
@@ -296,7 +302,7 @@ public class Mensuration {
 			double cubeArea = cube.getSurfaceAreaCube();
 			double cubeVolume = cube.getVolumeCube();
 			
-			JOptionPane.showMessageDialog(null,"Area is "+ cubeArea+"cm2\nVo lumeis "+cubeVolume+"cm");3
+			JOptionPane.showMessageDialog(null,"Area is "+ cubeArea+"cm2\nVo lumeis "+cubeVolume+"cm3");
 			
 			displayMenu();
 			
@@ -307,14 +313,17 @@ public class Mensuration {
 			
 			String lengthCuboidStr = JOptionPane.showInputDialog(null,"Enter length of Cuboid");
 			String breadthCuboidStr = JOptionPane.showInputDialog(null,"Enter breadth of Cuboid");
+			String heightCuboidStr = JOptionPane.showInputDialog(null,"Enter height of Cuboid");
 			
 			double lengthCuboid =  Double.parseDouble(lengthCuboidStr);
 			double breadthCuboid =  Double.parseDouble(breadthCuboidStr);
+			double heightCuboid =  Double.parseDouble(heightCuboidStr);
 			
 			Cuboid cuboid = new Cuboid();
 			
 			cuboid.setLengthCuboid(lengthCuboid);
 			cuboid.setBreadthCuboid(breadthCuboid);
+			cuboid.setHeightCuboid(heightCuboid);
 			
 			cuboid.properties(cuboid);
 			

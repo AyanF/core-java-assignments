@@ -1,7 +1,7 @@
 package Mensuration;
 
-class Square {
-	
+class Square{
+	 
 	private double sideSquare;
 	private double areaSquare;
 	private double perimeterSquare;

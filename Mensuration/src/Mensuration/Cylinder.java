@@ -1,6 +1,6 @@
 package Mensuration;
 
-class Cylinder implements ThreeDShapes{
+class Cylinder{
 	
 	
 	private double radiusCylinder;
@@ -41,6 +41,18 @@ class Cylinder implements ThreeDShapes{
 	
 	public void setVolumeCylinder(double volumeCylinder) {
 		this.volumeCylinder = volumeCylinder;
+	}
+	
+	public void properties(Cylinder cylinder){
+		
+		surfaceAreaCylinder = 2*Mensuration.PI* radiusCylinder*heightCylinder 
+							  +2*Mensuration.PI*(radiusCylinder*radiusCylinder);
+		
+		volumeCylinder = Mensuration.PI* (radiusCylinder*radiusCylinder)*heightCylinder;
+		
+		cylinder.setSurfaceAreaCylinder(surfaceAreaCylinder);
+		cylinder.setVolumeCylinder(volumeCylinder);
+		
 	}
 	
 	

@@ -3,8 +3,6 @@ package Mensuration;
 class Sphere{
 	
 	private double radiusSphere;
-	private double heightSphere;
-
 	private double areaSphere;
 	private double volumeSphere;
 	
@@ -32,14 +30,14 @@ class Sphere{
 	
 	public void properties(Sphere sphere) {
 		
-	 double radius	= sphere.getRadiusSphere();
+		double radius	= sphere.getRadiusSphere();
 	 
-	 double volume = 4/3*(Mensuration.PI) *(radius*radius*radius);
+		double volume = 4/3*(Mensuration.PI) *(radius*radius*radius);
 	 
-	 double surfaceArea = 4*Mensuration.PI * (radius*radius);
+		double surfaceArea = 4*Mensuration.PI * (radius*radius);
 	 
-	 sphere.setAreaSphere(surfaceArea);
-	 sphere.setVolumeSphere(volume);
+		sphere.setAreaSphere(surfaceArea);
+		sphere.setVolumeSphere(volume);
 		
 	}
 	

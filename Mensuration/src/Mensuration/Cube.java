@@ -3,7 +3,6 @@ package Mensuration;
 class Cube {
 	
 	private double sideCude;
-
 	private double surfaceAreaCube;
 	private double volumeCube;
 	
@@ -32,24 +31,13 @@ class Cube {
 		this.volumeCube = volumeCube;
 	}
 
-	@Override
-	public double findArea(Square square) {
+	public void properties(Cube cube) {
 		
-		double side = square.getSideSquare();
-		
-		double area = side*side;
-		
-		return area;
-	}
-
-	@Override
-	public double findPerimeter(Square square) {
-		
-		double side = square.getSideSquare();
-		
-		double perimeter = 4*side;
+		double surfaceAreaCube = 6*(sideCude*sideCude);
+		double volumeCube = (sideCude*sideCude*sideCude);
 				
-		return perimeter;
+		cube.setSurfaceAreaCube(surfaceAreaCube);
+		cube.setVolumeCube(volumeCube);
 	}
 	
 }

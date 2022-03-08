@@ -4,6 +4,7 @@ class Cuboid{
 	
 	private double lengthCuboid;
 	private double breadthCuboid;
+	private double heightCuboid;
 
 	private double volumeCuboid;
 	private double surfaceAreaCuboid;
@@ -22,6 +23,12 @@ class Cuboid{
 	public void setBreadthCuboid(double breadthCuboid) {
 		this.breadthCuboid = breadthCuboid;
 	}
+	public double getHeightCuboid() {
+		return heightCuboid;
+	}
+	public void setHeightCuboid(double heightCuboid) {
+		this.heightCuboid = heightCuboid;
+	}
 	public double getVolumeCuboid() {
 		return volumeCuboid;
 	}
@@ -35,7 +42,15 @@ class Cuboid{
 		this.surfaceAreaCuboid = surfaceAreaCuboid;
 	}
 	
-	
+	public void properties(Cuboid cuboid){
+		
+		surfaceAreaCuboid = 2*lengthCuboid*breadthCuboid +2*lengthCuboid*heightCuboid +2*heightCuboid*breadthCuboid;  
+		volumeCuboid  = lengthCuboid*breadthCuboid*heightCuboid;
+		
+		cuboid.setSurfaceAreaCuboid(surfaceAreaCuboid);
+		cuboid.setVolumeCuboid(volumeCuboid);
+		
+		}
 	
 
 }

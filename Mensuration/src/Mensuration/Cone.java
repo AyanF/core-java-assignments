@@ -4,7 +4,6 @@ class Cone{
 	
 	private double radiusCone;
 	private double heightCone;
-
 	private double surfaceAreaCone;
 	private double volumeCone;
 	
@@ -33,6 +32,17 @@ class Cone{
 	}
 	public void setVolumeCone(double volumeCone) {
 		this.volumeCone = volumeCone;
+	}
+	
+	public void properties(Cone cone){
+	
+		surfaceAreaCone = Mensuration.PI *(radiusCone *radiusCone);  
+		volumeCone = Mensuration.PI * (radiusCone *radiusCone)*(heightCone/3);  
+	
+		cone.setVolumeCone(volumeCone);
+		cone.setSurfaceAreaCone(surfaceAreaCone);
+	
+	
 	}
 	
 }

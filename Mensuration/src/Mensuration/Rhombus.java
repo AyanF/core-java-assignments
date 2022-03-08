@@ -41,16 +41,14 @@ class Rhombus {
 		this.perimeterRhombus = perimeterRhombus;
 	}
 	
-	@Override
-	public double findArea(Circle circle) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-	
-	@Override
-	public double findPerimeter(Circle circle) {
-		// TODO Auto-generated method stub
-		return 0;
+	public void properties(Rhombus rhombus) {
+		
+		areaRhombus = sideRhombus*heightRhombus ;
+		perimeterRhombus = 4*sideRhombus ;
+		
+		rhombus.setPerimeterRhombus(perimeterRhombus);
+		rhombus.setAreaRhombus(areaRhombus);
+		
 	}
 	
 }

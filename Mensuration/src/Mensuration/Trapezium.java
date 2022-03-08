@@ -56,14 +56,14 @@ class Trapezium {
 		this.perimeterTrapezium = perimeterTrapezium;
 	}
 	
-	public void properties( ) {
+	public void properties(Trapezium trapezium ) {
 		 
-		double area = ;
+		double area = ((baseOneTrapezium+baseTwoTrapezium)/2)*heightTrapezium;
 		
-		double perimeter = ;
+		double perimeter = sideOneTrapezium + sideTwoTrapezium + baseOneTrapezium + baseTwoTrapezium ;
 				
-		
-		
+		trapezium.setAreaTrapezium(area);
+		trapezium.setPerimeterTrapezium(perimeter);
 		
 	}
 	
