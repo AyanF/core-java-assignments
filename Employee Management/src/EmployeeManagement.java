@@ -12,11 +12,34 @@ public class EmployeeManagement {
 	
 	
 	
-	public static void delete(Employee employee) {
+	public static void deleteEmployee(ArrayList<Employee> employeeList, int employeeId) throws IOException {
 		
-		
-		
+		for(Employee employee: employeeList)
+		{
+			
+			int currentId = employee.getId();
+			
+			if(currentId==employeeId)
+			{
+				employeeList.remove(employee);
+				//record deleted 
+				
+				System.out.println(currentId);
+				break;
+			}
+			
+			else
+			{
+				//Id not found 
+			}
+		}
+			
+		fileWriter(employeeList);
+			
+
 	}
+	
+	//Method to write ArrayList into File
 	
 	public static void fileWriter(ArrayList<Employee> employeeList) throws IOException {
 		
@@ -38,9 +61,15 @@ public class EmployeeManagement {
 			
 		
 		fileWriter.append(toWrite);
+		JOptionPane.showMessageDialog(null,"Records updtad successfully");
 		fileWriter.close();
 		
 	}
+	
+	
+	
+	//Loading file into ArrayList
+	
 	public static ArrayList<Employee> loadFile() throws  FileNotFoundException, IOException {
 		
 		ArrayList<Employee> employeeList= new ArrayList<Employee>();
@@ -71,13 +100,18 @@ public class EmployeeManagement {
 	    	
 	    	employeeList.add(employee);
 	    }
+	    
 	     bufReader.close();
 	    
 	     return employeeList;
 	      
 		}
 	
-	public static ArrayList<Employee> createEmployee(ArrayList<Employee> employeeList) {
+	
+	
+	//Create new employee record
+	
+	public static ArrayList<Employee> addEmployee(ArrayList<Employee> employeeList) {
 		
 
 		
@@ -124,26 +158,27 @@ public static void main(String[] args) throws Exception{
 		
 		switch (choice) {
 		
-//Case to create employee and write in file
+//Case to create employee record and write in text file
+		
 		case 1:
 			
-				employeeList = createEmployee(employeeList);
+				employeeList = addEmployee(employeeList);
 				fileWriter(employeeList);
-				//Display successful message
+				
 
 			break;
 			
-//Case to delete employee and update in file			
+//Case to delete employee and update in file	
+			
 		case 2:
 			
 			String employeeIdStr = JOptionPane.showInputDialog("Enter employee ID for deletion ");	
 			int employeeId = Integer.parseInt(employeeIdStr);
 			
-			//employee.setId(employeeId);
-			
-			//delete(employee);
+			deleteEmployee(employeeList,employeeId);
 			
 			break;
+			
 //Case to run search query 			
 		case 3:
 			
