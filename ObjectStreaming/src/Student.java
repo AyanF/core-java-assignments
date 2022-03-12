@@ -24,5 +24,17 @@ public class Student implements Serializable{
     public void setAddress(Address address) {
         this.address = address;
     }
+    
+    public Student(String firstName, String dateOfBirth, Address address) {
+        super();
+        this.dateOfBirth = dateOfBirth;
+        this.firstName = firstName;
+        this.address = address;
+    }
+    
+    @Override
+    public String toString() {
+        return "" + firstName + " " + dateOfBirth + " " + " "+address;
+    }
 
 }

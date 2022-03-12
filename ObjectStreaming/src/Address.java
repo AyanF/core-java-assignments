@@ -32,5 +32,21 @@ public class Address implements Serializable{
         this.pincode = pincode;
     }
     
+    public Address(String city, String state, String country, int pincode) {
+        
+        super();
+        this.city=city;
+        this.country=country;
+        this.state=state;
+        this.pincode=pincode;
+    }
+    
+    @Override
+    public String toString(){
+        
+        return " "+ country + " "+state+ " "+city+ " "+pincode;
+        
+    }
+    
     
 }
