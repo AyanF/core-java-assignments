@@ -39,7 +39,7 @@ public class SerializationTest {
             obs.writeObject(students);
             obs.close();
             fos.close();
-            
+            System.out.println("Serialization completed");
         }
         
         catch (IOException ioe) {
