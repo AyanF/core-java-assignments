@@ -5,6 +5,10 @@ import java.text.SimpleDateFormat;
 
 public class Student implements Serializable {
     
+    /**
+     * 
+     */
+    private static final long serialVersionUID = -3767882344431321688L;
     String firstName;
     Date dateOfBirth;
     Address address;
