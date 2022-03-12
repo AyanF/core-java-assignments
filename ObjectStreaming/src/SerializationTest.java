@@ -1,11 +1,18 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.io.IOException;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+import java.util.Scanner;
 
-public class SerializationTest {
+public class SerializationTest implements Serializable{
 
     public static void main(String[] args) {
         
         List<Student> students = new ArrayList<Student>();
+        
+        Scanner scanner= new Scanner(System.in);
         
         Student student1 = new Student();
         Student student2 = new Student();
@@ -44,6 +51,27 @@ public class SerializationTest {
         students.add(student2);
         students.add(student3);
         students.add(student4);
+        
+        System.out.println("Enter file name for serialized file");
+        
+        String fileName = scanner.nextLine(); 
+        scanner.close();
+        try {
+            
+            FileOutputStream fos = new FileOutputStream(fileName);
+            ObjectOutputStream obs = new ObjectOutputStream(fos);
+            
+            obs.writeObject(students);
+            obs.close();
+            fos.close();
+            
+        }
+        
+        catch (IOException ioe) {
+            
+            ioe.printStackTrace();
+            
+        }
         
         }
 

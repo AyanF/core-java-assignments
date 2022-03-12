@@ -1,5 +1,6 @@
+import java.io.Serializable;
 
-public class Student {
+public class Student implements Serializable{
     
     String firstName;
     String dateOfBirth;

@@ -1,10 +1,12 @@
+import java.io.Serializable;
 
-public class Address {
+public class Address implements Serializable{
     
     String city;
     String state;
-    int country;
-    String pincode;
+    String country;
+    int pincode;
+    
     public String getCity() {
         return city;
     }
@@ -17,16 +19,16 @@ public class Address {
     public void setState(String state) {
         this.state = state;
     }
-    public int getCountry() {
+    public String getCountry() {
         return country;
     }
-    public void setCountry(int country) {
+    public void setCountry(String country) {
         this.country = country;
     }
-    public String getPincode() {
+    public int getPincode() {
         return pincode;
     }
-    public void setPincode(String pincode) {
+    public void setPincode(int pincode) {
         this.pincode = pincode;
     }
     
