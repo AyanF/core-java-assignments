@@ -1,10 +1,10 @@
-public class AccountOverdrawDemoSafe implements Runnable {              
+public class AccountOverdrawSafeDemo implements Runnable {              
     
    Account acc = new Account();
     
     public static void main(String[] args) {
         
-        AccountOverdrawDemoSafe overDrawSafe = new AccountOverdrawDemoSafe();
+        AccountOverdrawSafeDemo overDrawSafe = new AccountOverdrawSafeDemo();
         
         Thread firstPerson = new Thread(overDrawSafe);
         Thread secondPerson = new Thread(overDrawSafe);
