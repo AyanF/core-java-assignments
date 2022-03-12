@@ -1,9 +1,12 @@
 import java.io.Serializable;
+import java.util.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 
-public class Student implements Serializable{
+public class Student implements Serializable {
     
     String firstName;
-    String dateOfBirth;
+    Date dateOfBirth;
     Address address;
     
     public String getFirstName() {
@@ -12,10 +15,10 @@ public class Student implements Serializable{
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-    public String getDateOfBirth() {
+    public Date getDateOfBirth() {
         return dateOfBirth;
     }
-    public void setDateOfBirth(String dateOfBirth) {
+    public void setDateOfBirth(Date dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
     public Address getAddress() {
@@ -25,12 +28,24 @@ public class Student implements Serializable{
         this.address = address;
     }
     
-    public Student(String firstName, String dateOfBirth, Address address) {
+    
+    
+    public Student (String firstName, String date, Address address) {
         super();
-        this.dateOfBirth = dateOfBirth;
-        this.firstName = firstName;
-        this.address = address;
+        try {
+            Date date1=new SimpleDateFormat("yyyy-MM-dd").parse(date);
+            this.dateOfBirth = date1;
+            this.firstName = firstName;
+            this.address = address;
+        }
+        catch (ParseException pe) {
+            pe.printStackTrace();
+        }
+        
     }
+    
+     
+      
     
     @Override
     public String toString() {
