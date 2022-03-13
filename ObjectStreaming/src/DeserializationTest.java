@@ -18,7 +18,7 @@ public class DeserializationTest {
             
           FileInputStream fis = new FileInputStream(fileName);
           ObjectInputStream ois = new ObjectInputStream(fis);
-          
+          System.out.println("De started");
           students  = (ArrayList) ois.readObject();
           
           ois.close();
