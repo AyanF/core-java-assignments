@@ -30,7 +30,6 @@ public class DeserializationTest {
         catch(IOException ioe){
             
             ioe.printStackTrace();
-            
         }
         
         catch(ClassNotFoundException classNotFound) {
